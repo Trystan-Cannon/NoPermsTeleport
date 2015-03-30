@@ -1,0 +1,28 @@
+name: NoPermsTeleport
+main: io.github.trystancannon.nopermsteleport.core.NoPermsTeleport
+version: 1.0
+
+commands:
+    nptpa:
+        description: Like /tpa but without permissions.
+        usage: /<command> [player name]
+        permission: np.tpa
+    nptpaccept:
+        description: Like /tpaccept but without permissions.
+        usage: /<command>
+        permission: np.tpaccept
+    nptpdeny:
+        description: Like /tpdeny but without permissions.
+        usage: /<command>
+        permission: np.tpdeny
+        
+permissions:
+    np.tpa:
+        description: Allows for the use of /nptpa.
+        default: true
+    np.tpaccept:
+        description: Allows users to use /nptpaccept.
+        default: true
+    np.tpdeny:
+        description: Allows users to use /nptpdeny.
+        default: true
